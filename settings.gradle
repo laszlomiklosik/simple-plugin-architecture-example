@@ -1,0 +1,1 @@
+include 'plugin-api', 'example-plugin1', 'example-plugin2', 'plugin-container'
