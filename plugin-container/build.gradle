@@ -1,3 +1,13 @@
+apply plugin: 'application'
+
+mainClassName = "com.plugin.container.Container"
+
 dependencies {
     compile project(':plugin-api')
+    compile project(':example-plugin1-api') /* exposed service */
+}
+
+jar {
+    /* Create fat jar */
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }

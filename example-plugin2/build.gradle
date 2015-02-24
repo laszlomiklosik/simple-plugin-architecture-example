@@ -1,3 +1,4 @@
 dependencies {
     compile project(':plugin-api')
+    compile project(':example-plugin1-api') /* because plugin2 calls plugin1 */
 }

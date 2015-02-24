@@ -1,1 +1,1 @@
-include 'plugin-api', 'example-plugin1', 'example-plugin2', 'plugin-container'
+include 'plugin-api', 'plugin-container', 'example-plugin1-api', 'example-plugin1', 'example-plugin2-api', 'example-plugin2'
